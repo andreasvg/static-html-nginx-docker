@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+    api:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: andreasvg/static-html
+        container_name: static-html
+        ports:
+            - "8080:80"      
